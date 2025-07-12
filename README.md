@@ -35,8 +35,9 @@ This repo contains the source code and necessary files to run the [Streamlit](ht
 - [Statsmodels](https://www.statsmodels.org/stable/index.html)
 
 ### Running on your local machine 
-1. Create a Python virtual environment (venv, conda, uv, etc.) after cloning the repo in your desired location. If you are using venv: `python -m venv austincrimedash`.
-2. Activate the virtual environment. If you use `venv`: `source austincrimedash/bin/activate` (macOS/Linux) OR `myfirstproject\Scripts\activate` (Windows).
+1. Create a Python virtual environment (venv, conda, uv, etc.) after cloning the repo in your desired location. If you are using venv: `python -m venv .venv`.
+2. Activate the virtual environment. If you use `venv`: `source .venv/bin/activate` (macOS/Linux) OR `.venv\Scripts\activate` (Windows).
 3. Install packages using pip: `pip install -r requirements.txt`.
-4. Once packages are installed, to run the app, type this command in the terminal while in the directory of the `austincrimedash`: `streamlit run dashboard.py`. This will launch a local instance of the app in your browser. Kill the terminal using `Ctrl+C` once you finish the application. 
+4. Once packages are installed, to run the app, type this command in the terminal while in the directory of the `austincrimedash`: `streamlit run dashboard.py`. This will launch a local instance of the app in your browser.
+5. Kill the terminal using `Ctrl+C` once you finish the application. 
    
