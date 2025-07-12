@@ -3,8 +3,8 @@
 ## NOTE
 
 - You must clone the repository and run `streamlit run dashboard.py` to launch a local instance in your browser.
-- Because of the size of the data, it may take \~3-5 minutes to fully run the script.
-- To instead view a markdown, non-iteractive version of the dashboard, click [here](DASHBOARDMARKDOWN.md).
+- Because of the size of the data, it may take \~3-5 minutes to run the script entirely.
+- To instead view a markdown, non-interactive version of the dashboard, click [here](DASHBOARDMARKDOWN.md).
 
 ### **Contributors**:
 
@@ -33,3 +33,10 @@ This repo contains the source code and necessary files to run the [Streamlit](ht
 
 - [Scikit-learn](https://scikit-learn.org/stable/)
 - [Statsmodels](https://www.statsmodels.org/stable/index.html)
+
+### Running on your local machine 
+1. Create a Python virtual environment (venv, conda, uv, etc.) after cloning the repo in your desired location. If you are using venv: `python -m venv austincrimedash`.
+2. Activate the virtual environment. If you use `venv`: `source austincrimedash/bin/activate` (macOS/Linux) OR `myfirstproject\Scripts\activate` (Windows).
+3. Install packages using pip: `pip install -r requirements.txt`.
+4. Once packages are installed, to run the app, type this command in the terminal while in the directory of the `austincrimedash`: `streamlit run dashboard.py`. This will launch a local instance of the app in your browser. Kill the terminal using `Ctrl+C` once you finish the application. 
+   
