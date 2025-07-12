@@ -1,9 +1,9 @@
 json
 pandas
 altair
-plotly
 geopandas
 streamlit
 shapely
-scitkit-learn
+scikit-learn
 statsmodels
+plotly
