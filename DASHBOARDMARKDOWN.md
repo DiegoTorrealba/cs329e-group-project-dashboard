@@ -46,6 +46,8 @@ Austin crime continually gone down since its peak at 142,000 crimes in 2008.
 
 This reinforces the idea that Austin crime is trending down. Additionally, there is evidence of seasonality with monthly crimes, with months having distinct average crime frequencies
 
+### Visualization Seven: Random Forest Classifier
+
 ![Random Forest Classifier Report: Shows how well the model does at ranking different categories of crime using the data.](visualizations/viz7.png "Random Forest Classifier Report: Shows how well the model does at ranking different categories of crime using the data.")
 
 The poor-performing model demonstrates the imbalanced number of observations for each category as well as not enough information to be able to confidently determine the category of crime based on available variables.
@@ -55,8 +57,8 @@ The poor-performing model demonstrates the imbalanced number of observations for
 * Theft and burglary offenses are the most common category of crime in Austin.
 * Theft has historically occurred mostly in the afternoon while burglary occurs commonly at night.
 * Downtown Austin and Riverside lead in theft and burglary crimes in Austin.
-* In West Campus and Riverside, theft is most common in parking lots and residencies.
+* In West Campus and Riverside, theft is most common in parking lots and residences.
 * In Downtown, most thefts occur on the street or inside bars.
 * Austin crime has steadily declined since 2008 despite Austin's population increase.
-* Austin crime exhibits a seasonality by year, which months having similar crime frequencies across years.
-* Immense imbalances in the observances of different crime categories shows how violent crime, excluding theft and burglary, are uncommon due to how large the dataset is.
+* Austin crime exhibits a seasonality by year, with months having similar crime frequencies across years.
+* Immense imbalances in the observances of different crime categories show how violent crime, excluding theft and burglary, is uncommon due to how large the dataset is.
