@@ -8,7 +8,6 @@ import streamlit as st
 from shapely.geometry import Point
 from sklearn.linear_model import LinearRegression
 from statsmodels.tsa.seasonal import seasonal_decompose
-from dateutil.parser import parse
 from plotly.subplots import make_subplots
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report
@@ -561,36 +560,36 @@ st.header("A dashboard about Austin crime by Diego Torrealba, Alex Domond and Je
 
 st.subheader("Introduction")
 st.text("As people who live in Austin and go to UT, we're interested in looking at how Austin crime has evolved over the years and what important information or patterns should be noted from the data.")
-st.subheader("""Visualization 1: What type of crimes are happening in Austin?""")
+st.subheader("""Visualization 1: What types of crimes are happening in Austin?""")
 st.plotly_chart(fig1)
-st.text("First, an overview of crimes shows that theft and burglary are the most common crime category in Austin.")
+st.text("First, the overview of crimes shows that theft and burglary are the most common crime categories in Austin.")
 st.divider()
-st.subheader("""Visualization 2: When do these crimes happen?""")
+st.subheader("""Visualization Two: When do these crimes happen?""")
 st.altair_chart(fig2)
-st.text("Theft in Austin most commonly occurs in the afternoon and while burglary is most common at night.")
+st.text("Theft in Austin most commonly occurs in the afternoon, while burglary is most common at night.")
 st.text("Overall, however, night is the most common time of day for crime in Austin, while the morning is the least common.")
 st.divider()
-st.subheader("""Visualization 3: Where in Austin is crime most prevalent?""")
+st.subheader("""Visualization Three: Where in Austin is crime most prevalent?""")
 st.plotly_chart(fig3, theme=None)
-st.text("Downtown Austin is by far leading neighborhood in theft in Austin while Riverside has the 3rd most thefts. Downtown and Riverside have high counts of burgarly, but North Austin has the highest burgarly rates.")
+st.text("Downtown Austin is by the far leading neighborhood in theft in Austin, while Riverside has the third most thefts. Downtown and Riverside have high counts of burgarly, but North Austin has the highest burgarly rates.")
 st.text("Generally, high crime frequency across categories for Downtown, Riverside and North Lamar Rundberg.")
 st.divider()
-st.subheader("""Visualization 4: Location Type Deep Dives: In what locations should we be most aware?""")
+st.subheader("""Visualization Four: Location Type Deep Dives: In what locations should we be most aware?""")
 st.altair_chart(fig4, theme=None)
-st.text("In West Campus and Riverside, theft is most common in parking lots and at residencies while in Downtown, most thefts occur on the street or inside of bars. Fortunately, theft is not very common on UT's campus")
+st.text("In West Campus and Riverside, theft is most common in parking lots and at residencies, while in Downtown, most thefts occur on the street or inside of bars. Fortunately, theft is not very common on UT's campus")
 st.divider()
-st.subheader("""Visualization 5: Is Austin becoming safer overall?""")
+st.subheader("""Visualization Five: Is Austin becoming safer overall?""")
 st.plotly_chart(fig5, theme=None)
 st.text("Overall, the count of crimes in Austin has steadily decreased since 2003 even with a population boom.")
 st.text("Austin crime continually gone down since its peak at 142,000 crimes in 2008.")
 st.divider()
-st.subheader("""Visualization 6: Multiplication Decomposition of Austin Crime""")
+st.subheader("""Visualization Six: Multiplicative Decomposition of Austin Crime""")
 st.plotly_chart(fig6, theme=None)
-st.text("Reinforces the idea that Austin crime is trending down. Additionally, there is evidence of seasonality with monthly crimes, with months having distinct average crime frequencies")
+st.text("This reinforces the idea that Austin crime is trending down. Additionally, there is evidence of seasonality with monthly crimes, with months having distinct average crime frequencies")
 st.divider()
-st.subheader("""Visualization 7: Random Forest Classifier Classification Report""")
+st.subheader("""Visualization Seven: Random Forest Classifier Classification Report""")
 st.altair_chart(fig7)
-st.text("Poor-performing model demonstrates the imbalanced number of observations for each category as well as not enough information to be able to confidently determine the category of crime based on available variables.")
+st.text("The poor-performing model demonstrates the imbalanced number of observations for each category as well as not enough information to be able to confidently determine the category of crime based on available variables.")
 st.divider()
 st.subheader("Conclusion")
 st.markdown("""
